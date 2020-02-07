@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home - Learning Space Foundation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			.menu{
+				text-transform:uppercase;
+				padding:0px;
+				font-size:13px;
+				display:flex;
+				justyfy-content:space-around;
+			}
+			.menu a{
+				text-decoration:none;
+				color:#2d3436;
+				font-weight:bold;
+				position:relative;
+			}
+			.menu a:before{
+				content: "";
+				position:absolute;
+				top:100%;
+				left:0;
+				width:0;
+				height:3px;
+				background-color:#000;
+				transition:all 0.5s linear;
+			}
+			.menu a:after{
+				content: "";
+				position:absolute;
+				top:0%;
+				right:0;
+				width:0;
+				height:3px;
+				background-color:#000;
+				transition:all 0.5s linear;
+			}
+			.menu a:hover:before{
+				width:100%;
+				background-color:#0984e3;
+			}
+			.menu a:hover:after{
+				width:100%;
+				background-color:#0984e3;
+			}
+			ul li{
+				margin-top:12px;
+			}
+			.bg{
+				
+				display:cover;
+				width:100%;
+				height:690px
+				
+			}
+			.about {
+				font-size:40.98px;
+				margin-left:30px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #99ffd6;
+			}
+				
+			.zoom1{
+				transition: 1s;
+				background-color:rgb(255, 191, 0, 0.6);
+			}
+			.zoom1:hover{
+				transform:scale(1.1);
+			}
+			.para1{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:18px;
+				margin-left:30px;
+				text-indent: 30px;
+				text-align: justify;
+				letter-spacing: 1px;
+				
+			}
+			.vision{
+				font-size:3vw;
+				margin-right:22px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #99ffd6;
+			}
+			.zoom2{
+				transition:1s;
+				background-color:rgb(255, 191, 0, 0.6);
+			}
+			.zoom2:hover{
+				transform:scale(1.1);
+			}
+			.para2{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:16px;
+				margin-right:30px;
+				margin-left:60px;
+				text-indent: 30px;
+				text-align: justify;
+				letter-spacing: 1px;
+			}
+			.mission{
+				font-size:3vw;
+				margin-right:18px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #99ffd6;
+			}
+			.zoom3{
+				transition:1s;
+				background-color:rgb(255, 191, 0, 0.6);
+			}
+			.zoom3:hover{
+				transform:scale(1.1);
+			}
+			.para3{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:16px;
+				margin-right:30px;
+				margin-left:60px;
+				text-indent: 30px;
+				text-align: justify;
+				letter-spacing: 1px;
+			}
+			.story{
+				font-size:50px;
+				margin-left:28px;
+				margin-top:50px;
+				padding:20x;
+				text-align: center;
+				text-transform: uppercase;
+				color: #483ed6;
+			}
+			.para4{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:10px;
+				margin-left:30px;
+				margin-right:30px;
+				padding-bottom:30px;
+				text-indent: 30px;
+				text-align: justify;
+				letter-spacing: 1px;
+			}
+			.zoom4{
+				background-color:rgb(0, 255, 255, 0.6);
+			}
+			footer{
+				background-color:black;
+				color:white;
+			}
+			.icon{
+				height:100px;
+				justify-content:center;
+				align-items:center;
+			}
+			.aicon{
+				height:100px;
+				width:20px;
+				background-color:;
+				border-radius:50px;
+				text-align:center;
+				margin:10px;
+				line-height:110px;
+				border-shadow:1px 4px 2px 2px white;
+			}
+			i{
+				transition:all 0.3s linear;
+			}
+			i:hover{
+				transform:scale(1.4);
+			}
+			.fa-facebook{
+				margin-top:40px;
+				margin-left:100px;
+			}
+			.fa-instagram{
+				color:#e84393;
+			}
+			.fa-twitter{
+				color:#0097e6;
+			}
+			.fa-youtube{
+				color:#e84118;
+			}
+			.nav-footer1{
+				text-decoration:none;
+				list-style-type: none;
+				float:center;
+				margin-top:40px;
+				margin-left:120px;
+				font-size:20px;
+				font-family:Eras Light ITC;
+				
+			}
+			.address{
+				text-decoration:none;
+				list-style-type: none;
+				margin-bottom:20px;
+				font-family:Eras Light ITC;
+			}
+			.left-footer{
+				float:left;
+			}
+			right-footer{
+				float:right;
+				padding-bottom:50px;
+				margin-left:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top" style="background-color:#81ecec;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<img src="LearningSpaceFoundation Logo.png" style="width:100px; height:80px">
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar" style="padding-top:5px;">
+					<b style="float:center; margin-left:60px; padding-bottom:5px; font-size:48px; font-family:Forte; color:#a61814;">Learning Space Foundation</b>
+					<ul class="nav navbar-nav navbar-right menu">
+						<li class=""><a href="#" style="color:#2d3436"><b>Who We Are</b></a></li>
+						<li><a href="#" style="color:#2d3436"><b>Our Work</b></a></li>
+						<li><a href="#" style="color:#2d3436"><b>Join The Movement</b></a></li>
+						<li><a href="#" style="color:#2d3436"><b>Media</b></a></li>
+						<li><a href="#" style="color:#2d3436"><b>Contact Us</b></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner bg" role="listbox">
+				<div class="item active">
+					<img src="DSC09929.jpg" alt="photo" width="1365px" height="auto">
+					<div class="carousel-caption">
+						<!--h3>New York</h3>
+						<p>The atmosphere in New York is lorem ipsum.</p> -->
+					</div>      
+				</div>
+
+				<div class="item">
+					<img src="IMG_20190123_130156.jpg" alt="Chicago" width="1365px" height="auto">
+					<div class="carousel-caption">
+						<!--<h3>Chicago</h3>
+						<p>Thank you, Chicago - A night we won't forget.</p>-->
+					</div>      
+				</div>
+    
+				<div class="item">
+					<img src="IMG_20190124_155013.jpg" alt="Los Angeles" width="1365px" height="auto">
+					<div class="carousel-caption">
+						<!--<h3>LA</h3>
+						<p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>-->
+					</div>      
+				</div>
+				
+				<div class="item">
+					<img src="IMG_20190918_122915_1.jpg" alt="Los Angeles" width="1365px" height="auto">
+					<div class="carousel-caption">
+						<!--<h3>LA</h3>
+						<p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>-->
+					</div>      
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<div id="about" class="container-fluid" style="margin-top:30px;">
+			<div class="row">
+				<div class="col-sm-6">
+				<div class="zoom1 jumbotron">
+					<h1 class="about"><b>About Us</b></h1>
+					<p class="para1">Awareness is like the Sun. When it shines on things, they are transformed.
+					Learning Space Foundation strongly believes that the first step in creating a better society is empowering our future citizens.
+					We work towards empowerment of marginalized children and youth by raising awareness and educating them about health, safety and social 
+					issues and building necessary skills to enable them overcome success barriers.
+					We work with other NGOs and create collaborative synergy by providing our services in program management, training the students, teachers 
+					and facilitating leadership workshops for organizational effectiveness.
+					</p>
+				</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="zoom2 jumbotron" style="padding:18px;">
+					<h1 class="vision"><b>Vision</b></h1>
+					<p class="para2">Learning Space envisions a world where all young people stay healthy, treat each other and the environment with respect, 
+					dignity, become responsible and fulfilled members of the society and live in peace and harmony.</p>
+					</div>
+					<div class="zoom3 jumbotron" style="padding:18px;">
+					<h1 class="mission"><b>Mission</b></h1>
+					<p class="para3">To empower children and youth by building necessary skills that help them to be safe, happy and healthy.
+						To develop, promote and encourage uplifting social and educational processes for students and teachers.
+					</p>
+					</div>
+				</div>
+   
+			</div>
+		</div>
+		
+		<!-- Story of Success -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+				<div class="zoom4 jumbotron" style="padding:2px;">
+					<h1 class="story" style="font-size:50px;"><b>Story of our success</b></h1>
+					<p class="para4" style="font-size:18px;">Learning Space started in 2014 as a charitable organization by conviction. Our journey started as training cum implementation partner 
+						for a 2-year Science, Technology, Engineering and Mathematics (STEM) project for 20 Rainbow Homes in the twin cities of Hyderabad and 
+						Secunderabad which aimed at improving learning abilities of ~1300 children taking shelter in these orphanages using technology aided 
+						teaching and learning. Later we handled training and implementation of another STEM project for about 12,000 less privileged students 
+						studying at 88 government primary, upper-primary and high schools of Nampally and Khairatabad Mandals in Hyderabad. These projects were 
+						done in collaboration with United Way Hyderabad, Bodhaguru and some IT companies. We also worked with some other NGOs such as Association 
+						for Promoting Social Action (APSA) and Suma Niketan. Learning Space Foundation is a registered as a public charitable trust in Dec, 2018.
+						While we were working with those organizations and schools, we got to know about some unfortunate incidents where children were being 
+						sexually abused, bullying and harassing other students, eve teasing, some children endangering their future by making wrong decisions
+						etc. One such example is Chotu (name changed to protect privacy). He is an intelligent youth, but unaware of the child marriage act 
+						and POCSO, married a minor girl against elders' wish and landed in jail. Most of them being first generation learners, they have little 
+						knowledge about law and how their actions and decisions can destroy their dignity and future. It feels devastated if we think about what 
+						happens to their self-concept. Studies reveal that teenagers with low self-esteem have low confidence, feel insecure and may develop 
+						anti-social attitude.
+						They need to be given awareness on health and hygiene as well. It is a common sight during breaks, that kids eat packaged junk foods 
+						which are very harmful for growing children. As it is a known fact that social and creative learning happens only when a child is 
+						healthy and safe. So, it became our immediate priority to create awareness among children, teachers and communities about health and 
+						safety so that children can explore, learn and grow.
+					</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="social">
+					<div class="col-sm-4 icon">	
+						<h3 style="margin-left:100px; font-family:Eras Light ITC;">Learning Space Foundation</h3>
+						<a target="_blank" href="https://www.facebook.com/LearningSpaceIndia" class="aicon">
+							<i class="fa fa-2x fa-facebook"> </i>
+						</a>
+						<a target="_blank" href="https://www.facebook.com/SurakshaAurSammaan" class="aicon">
+							<i class="fa fa-2x fa-instagram"> </i>
+						</a>
+						<a target="_blank" href="@LSF_Hyd" class="aicon">
+							<i class="fa fa-2x fa-twitter"> </i>
+						</a>
+						<a target="_blank" href="#" class="aicon">
+							<i class="fa fa-2x fa-youtube"> </i>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<ul class="nav-footer1">
+						<li><a href="#" style="color:white;">Home</a></li>
+						<li><a href="#" style="color:white;">About Us</a></li>
+						<li><a href="#" style="color:white;">Our Work</a></li>
+						<li><a href="#" style="color:white;">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h3 style="margin-left:39px; font-family:Eras Light ITC;">Head Office</h3>
+					<ul class="address">
+						<li>C-1505, Ramky Towers,</li>
+						<li>Gachibowli,</li>
+						<li>Hyderabad - 500032,</li>
+						<li>Telangana</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<p class="left-footer" style="margin-left:100px;">All Rights Reserved &copy 2020.</p>
+				</div>
+				<div class="col-sm-4">
+					<p class="right-footer" style="margin-bottom:40px; margin-left:39px;">Designed by Vikash Kumar</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
